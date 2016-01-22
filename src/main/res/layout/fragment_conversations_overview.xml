@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_view_spl"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/pane"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <de.timroes.android.listview.EnhancedListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:divider="@drawable/divider"
+            android:dividerHeight="1px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selected_conversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

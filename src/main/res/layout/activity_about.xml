@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.iblue.chat.ui.AboutActivity"
+
+    android:layout_centerVertical="true"
+    android:background="@drawable/img0"
+    android:fitsSystemWindows="true"
+    android:gravity="center_vertical" >
+<ImageView
+    android:id="@+id/ic"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/ic_launcher" />
+
+
+<TextView
+android:id="@+id/app_name"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/ic"
+android:layout_margin="8dp"
+android:gravity="center_horizontal"
+android:text="BlueChat"
+android:textColor="#0000ff"
+android:textSize="25sp"
+
+android:textStyle="italic"
+android:typeface="serif" />
+
+<TextView
+android:id="@+id/description"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/app_name"
+android:layout_marginBottom="15dp"
+    android:textColor="#000000"
+android:gravity="center_horizontal"
+android:text="@string/bluedots"
+android:typeface="serif" />
+
+
+<TextView
+android:id="@+id/blue"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/description"
+android:gravity="center_horizontal"
+android:text="@string/a1"
+android:textColor="#0000ff"
+android:textSize="20sp"
+android:typeface="serif" />
+
+
+<TextView
+android:id="@+id/love"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/blue"
+android:layout_marginBottom="20dp"
+android:gravity="center_horizontal"
+android:text="@string/blue"
+android:textColor="#4444ff"
+android:typeface="serif" />
+
+
+<TextView
+android:id="@+id/develop"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/love"
+android:layout_marginBottom="6dp"
+android:gravity="center_horizontal"
+android:text="@string/a3"
+android:textColor="#000000"
+android:textSize="20sp"
+android:textStyle="italic"
+android:typeface="serif" />
+
+<RelativeLayout
+android:id="@+id/bcard"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/develop">
+
+<TextView
+    android:id="@+id/developer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="6dp"
+    android:gravity="center_horizontal"
+
+    android:text="@string/developer"
+    android:textColor="#0000ff"
+    android:textSize="20sp"
+    android:textStyle="italic"
+    android:typeface="serif" />
+
+<TextView
+    android:id="@+id/email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/developer"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="8dp"
+    android:gravity="center_horizontal"
+    android:text="@string/email"
+    android:textColor="#ffffff"
+    android:typeface="serif" />
+
+<TextView
+    android:id="@+id/cont"
+    android:layout_width="wrap_content"
+    android:textColor="#ff0000"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/email"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="8dp"
+    android:text="+91 8090150580"
+    android:typeface="serif" />
+
+</RelativeLayout>
+
+</RelativeLayout>

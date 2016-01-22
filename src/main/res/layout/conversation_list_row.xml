@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:app="http://schemas.android.com/apk/res-auto"
+			 android:layout_width="fill_parent"
+			 android:layout_height="wrap_content"
+			 android:descendantFocusability="blocksDescendants">
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/accent"/>
+
+	<FrameLayout
+		android:id="@+id/swipeable_item"
+		android:layout_width="fill_parent"
+		android:background="@color/accent"
+		android:layout_height="fill_parent" >
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:padding="8dp"  >
+
+		<com.makeramen.roundedimageview.RoundedImageView
+			android:id="@+id/conversation_image"
+			android:layout_width="56dp"
+			android:layout_height="56dp"
+			android:layout_alignParentLeft="true"
+			android:scaleType="centerCrop"
+			app:riv_corner_radius="3dp" />
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="56dp"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@+id/conversation_image"
+			android:paddingLeft="20dp" >
+
+			<TextView
+				android:id="@+id/conversation_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/conversation_lastwrapper"
+				android:layout_toLeftOf="@+id/conversation_lastupdate"
+				android:singleLine="true"
+				android:textColor="#000000"
+				android:textSize="?attr/TextSizeHeadline"
+				android:typeface="sans" />
+
+			<LinearLayout
+				android:id="@+id/conversation_lastwrapper"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/conversation_name"
+				android:orientation="vertical"
+				android:paddingTop="3dp" >
+
+				<TextView
+					android:id="@+id/conversation_lastmsg"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:scrollHorizontally="false"
+					android:singleLine="true"
+					android:textColor="#666666"
+					android:textSize="?attr/TextSizeBody" />
+
+				<ImageView
+					android:id="@+id/conversation_lastimage"
+					android:layout_width="fill_parent"
+					android:layout_height="36dp"
+					android:background="@color/white"
+					android:scaleType="centerCrop" />
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/conversation_lastupdate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/conversation_name"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:textSize="?attr/TextSizeInfo" />
+		</RelativeLayout>
+	</RelativeLayout>
+	</FrameLayout>
+</FrameLayout>
